@@ -34,4 +34,6 @@ class AllianceAuthOAuth2Validator(OAuth2Validator):
                 raise ImproperlyConfigured('ALLIANCEAUTH_OIDC_EMAIL_DOMAIN must be a bare domain name') from error
             if request.user.profile.main_character is not None:
                 out['email'] = lambda request: f"{request.user.profile.main_character.character_id}@{domain}"
+        if request.user.profile.main_character is not None:
+                out['picture'] = lambda request: f"https://images.evetech.net/characters/{request.user.profile.main_character.character_id}/portrait"
         return out
