@@ -21,7 +21,7 @@
 
 ## Setup/Install:
 
-1. Install this fork (not the upstream PyPI release): `pip install git+https://github.com/Navatalin/allianceauth-oidc-provider.git`
+1. Install this fork (not the upstream PyPI release): `pip install git+https://github.com/notarib-catcher/allianceauth-oidc-provider.git`
 
 1. add to INSTALLED_APPS
 
